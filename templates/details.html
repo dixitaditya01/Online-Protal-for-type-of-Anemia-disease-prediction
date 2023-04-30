@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+
+<head>
+    <title>Anemia Details</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css"
+        href="//fonts.googleapis.com/css?family=Montserrat:400,700%7CLato:300,300italic,400,400italic,700,900%7CPlayfair+Display:700italic,900">
+    <link rel="stylesheet" href="static/css/bootstrap.css">
+    <link rel="stylesheet" href="static/css/fonts.css">
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+    <div class="preloader">
+        <div><a class="brand brand-md" href="templates/index.html">Anemia Type Prediction</a>
+            <div class="page-loader-body">
+                <div id="spinningSquaresG">
+                    <div class="spinningSquaresG" id="spinningSquaresG_1"></div>
+                    <div class="spinningSquaresG" id="spinningSquaresG_2"></div>
+                    <div class="spinningSquaresG" id="spinningSquaresG_3"></div>
+                    <div class="spinningSquaresG" id="spinningSquaresG_4"></div>
+                    <div class="spinningSquaresG" id="spinningSquaresG_5"></div>
+                    <div class="spinningSquaresG" id="spinningSquaresG_6"></div>
+                    <div class="spinningSquaresG" id="spinningSquaresG_7"></div>
+                    <div class="spinningSquaresG" id="spinningSquaresG_8"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page">
+        <header class="page-head">
+            <div class="rd-navbar-wrap">
+                <nav class="rd-navbar rd-navbar-corporate-dark" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed"
+                    data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static"
+                    data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static"
+                    data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static"
+                    data-xxl-device-layout="rd-navbar-static" data-lg-stick-up="true" data-xl-stick-up="true"
+                    data-xxl-stick-up="true" data-lg-stick-up-offset="53px" data-xl-stick-up-offset="53px"
+                    data-xxl-stick-up-offset="53px">
+                    <div class="rd-navbar-inner">
+                        <div class="rd-navbar-aside">
+                            <div class="rd-navbar-aside-toggle" data-custom-toggle=".rd-navbar-aside"
+                                data-custom-toggle-disable-on-blur="true"><span></span></div>
+                            <div class="rd-navbar-aside-content context-dark">
+                                <ul class="rd-navbar-aside-group list-units">
+                                    <li>
+                                        <div class="unit unit-horizontal unit-spacing-xs">
+                                            <div class="unit-left"><span
+                                                    class="novi-icon icon icon-xxs-small icon-primary material-icons-place icon-shift-1"></span>
+                                            </div>
+                                            <div class="unit-body"><a class="link-light-2 d-inline" href="#">TCET Kandivali East
+                                                    Mumbai</a></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="unit unit-horizontal unit-spacing-xs">
+                                            <div class="unit-left"><span
+                                                    class="novi-icon icon icon-xxs icon-primary fa-clock-o"></span>
+                                            </div>
+                                            <div class="unit-body">
+                                                <p class="text-white">Mon – Sat: 9:00am–18:00pm. Sunday CLOSED</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="unit unit-horizontal unit-spacing-xs">
+                                            <div class="unit-left"><span
+                                                    class="novi-icon icon icon-xxs icon-primary material-icons-phone icon-shift-2"></span>
+                                            </div>
+                                            <div class="unit-body"><a class="link-light-2" href="tel:#">+91 800 123 45
+                                                    67</a></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="rd-navbar-aside-group">
+                                    <ul class="list-inline list-inline-reset">
+                                        <li><a class="icon icon-round icon-gray-dark-filled icon-xxs-smallest fa fa-facebook"
+                                                href="#"></a></li>
+                                        <li><a class="icon icon-round icon-gray-dark-filled icon-xxs-smallest fa fa-twitter"
+                                                href="#"></a></li>
+                                        <li><a class="icon icon-round icon-gray-dark-filled icon-xxs-smallest fa fa-google-plus"
+                                                href="#"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rd-navbar-group rd-navbar-search-wrap">
+                            <div class="rd-navbar-panel">
+                                <button class="rd-navbar-toggle" data-custom-toggle=".rd-navbar-nav-wrap"
+                                    data-custom-toggle-disable-on-blur="true"><span></span></button><a
+                                    class="rd-navbar-brand brand" href="templates/index.html"><img src="static/images/unnamed.jpg" alt=""
+                                        width="139" height="10" /></a>
+                            </div>
+                            <div class="rd-navbar-nav-wrap">
+                                <div class="rd-navbar-nav-inner">
+                                    <div class="rd-navbar-btn-wrap"><a class="btn btn-smaller btn-primary-outline"
+                                            href="/get-report" target="_blank">Get Report</a></div>
+                                    <ul class="rd-navbar-nav">
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="/">Home</a>
+                                        </li>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="/about">About</a>
+                                        </li>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="/details">Details</a>
+                                        </li>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="/contact">Contact</a>
+                                        </li>
+        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <section
+            class="section section-30 section-xxl-40 section-xxl-66 section-xxl-bottom-90 novi-background bg-gray-dark page-title-wrap"
+            style="background-image: url(static/images/bg-image-1.jpg);">
+            <div class="container">
+                <div class="page-title">
+                    <h2>Anemia Information</h2>
+                </div>
+            </div>
+        </section>
+        <section class="section section-60 section-md-100">
+            <div class="container">
+                <h3 class="text-center">Anemia</h3>
+                <div class="row justify-content-md-center">
+                    <div class="col-xl-10">
+                        <div class="accordion accordion-group accordion-group-light" id="accordionOne">
+                            <!--Bootstrap accordion-->
+                            <article class="accordion-item accordion-custom accordion-light">
+                                <div class="accordion-header" id="accordionOne-accordion-head-jvykiquw">
+                                    <div class="accordion-title">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#accordionOne-accordion-body-iaieohgs"
+                                            aria-controls="accordionOne-accordion-body-iaieohgs"
+                                            aria-expanded="true">General information<span
+                                                class="accordion-arrow"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="accordion-collapse collapse show" id="accordionOne-accordion-body-iaieohgs"
+                                    aria-labelledby="accordionOne-accordion-head-jvykiquw"
+                                    data-bs-parent="#accordionOne">
+                                    <div class="accordion-body">
+                                        <pre class="text-black">
+Anemia is defined as a low number of red blood cells. In a routine blood test, anemia is reported as a low hemoglobin or
+hematocrit. Hemoglobin is the main protein in your red blood cells. It carries oxygen, and delivers it throughout your
+body. If you have anemia, your hemoglobin level will be low too. If it is low enough, your tissues or organs may not get
+enough oxygen. Symptoms of anemia -- like fatigue or shortness of breath -- happen because your organs aren't getting
+what they need to work the way they should. 
+Anemia is a condition in which the number of red blood cells or the haemoglobin concentration within them is
+lower than normal.
+The most common causes of anaemia include nutritional deficiencies, particularly iron deficiency, though
+deficiencies in folate, vitamins B12 and A are also important causes.
+Haemoglobin is needed to carry oxygen and if you have too few or abnormal red blood cells, or not enough
+haemoglobin, there will be a decreased capacity of the blood to carry oxygen to the body’s tissue.
+For proper treatment, knowing the type of anemia the patient is suffering from is really important.
+There are mainly 3 types in which anemia can be divided into - Microcytosis (low MCV), Macrocytosis (high
+MCV) and Normocytic (normal MCV). Under these 3 types, we can zoom in into the cause of anemia..
+Anemia is the most common blood condition in the U.S. It affects almost 6% of the population. Women, young children, and
+people with long-term diseases are more likely to have anemia. Important things to remember are:
+
+Certain forms of anemia are passed down through your genes, and infants may have it from birth.
+Women are at risk of iron-deficiency anemia because of blood loss from their periods and higher blood supply demands
+during pregnancy.
+Older adults have a greater risk of anemia because they are more likely to have kidney disease or other chronic medical
+conditions.</pre>
+                                    </div>
+                                </div>
+                            </article>
+                            <!--Bootstrap accordion-->
+                            <article class="accordion-item accordion-custom accordion-light">
+                                <div class="accordion-header" id="accordionOne-accordion-head-ytmbeqtc">
+                                    <div class="accordion-title">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#accordionOne-accordion-body-kskrwlyj"
+                                            aria-controls="accordionOne-accordion-body-kskrwlyj"
+                                            aria-expanded="false">Symptoms Of Anemia<span class="accordion-arrow"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="accordion-collapse collapse" id="accordionOne-accordion-body-kskrwlyj"
+                                    aria-labelledby="accordionOne-accordion-head-ytmbeqtc"
+                                    data-bs-parent="#accordionOne">
+                                    <div class="accordion-body">
+<pre class="text-black">
+The signs of anemia can be so mild that you might not even notice them. At a certain point, as your blood cells
+decrease, symptoms often develop. Depending on the cause of the anemia, symptoms may include:
+
+    1. Dizziness, lightheadness, or feeling like you are about to pass out
+    2. Fast or unusual heartbeat
+    3. Headache
+    4. Pain, including in your bones, chest, belly, and joints
+    5. Problems with growth, for children and teens
+    6. Shortness of breath
+    7. Skin that’s pale or yellow
+    8. Cold hands and feet
+    9. Tiredness or weakness
+</pre>                                       
+                                    </div>
+                                </div>
+                            </article>
+                            <!--Bootstrap accordion-->
+                            <article class="accordion-item accordion-custom accordion-light">
+                                <div class="accordion-header" id="accordionOne-accordion-head-lvtdynul">
+                                    <div class="accordion-title">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#accordionOne-accordion-body-jtixxdfh"
+                                            aria-controls="accordionOne-accordion-body-jtixxdfh"
+                                            aria-expanded="false">How does anemia affect my body?<span
+                                                class="accordion-arrow"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="accordion-collapse collapse" id="accordionOne-accordion-body-jtixxdfh"
+                                    aria-labelledby="accordionOne-accordion-head-lvtdynul"
+                                    data-bs-parent="#accordionOne">
+                                    <div class="accordion-body">
+<pre class="text-black">
+When someone develops anemia, they’re said to be anemic, meaning they have symptoms of anemia, like being very tired or
+feeling cold all of the time. Anemia affects different people in different ways:
+
+    1. Newborns: Some infants are born with low red blood cell counts. Most newborns don’t need medical treatment for anemia,
+       but some with severe anemia may need blood transfusions.
+       
+    2. Infants: Infants may get less iron than they need when they start eating solid food. That’s because the iron in solid
+       food isn’t absorbed as easily as iron in breast milk or formula. Infants with anemia may appear lethargic.
+
+    3. Children: Children do a lot of growing between birth and age 2. Children going through growth spurts need more iron.
+       Children with anemia may develop related problems such as delayed development of motor skills and issues with learning.
+
+    4. Women who are pregnant: Women who are pregnant may develop iron-deficiency anemia, which may increase the chance of
+       complications such as premature birth or giving birth to babies with low birth weight.
+
+    5. Women and people designated female at birth (DFAB): Women and people DFAB who have heavy periods (menstrual bleeding) or
+       conditions like uterine fibroids may lose blood and develop anemia.
+
+    6. People age 65 and older: People over 65 are more likely to have iron-poor diets and certain chronic diseases that
+       increase their risk of developing anemia. If they develop anemia, they may have heart conditions or weakness that makes
+       it hard for them to get around. They may have confusion or depression.
+
+    7. People with chronic conditions: Some chronic conditions like autoimmune diseases or cancer may increase the risk of
+       anemia. This is anemia of chronic disease.
+</pre>
+                                    </div>
+                                </div>
+                            </article>
+                            <!--Bootstrap accordion-->
+                            <article class="accordion-item accordion-custom accordion-light">
+                                <div class="accordion-header" id="accordionOne-accordion-head-hylejmym">
+                                    <div class="accordion-title">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#accordionOne-accordion-body-cdjtfeeh"
+                                            aria-controls="accordionOne-accordion-body-cdjtfeeh"
+                                            aria-expanded="false">Causes Of Anemia<span
+                                                class="accordion-arrow"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="accordion-collapse collapse" id="accordionOne-accordion-body-cdjtfeeh"
+                                    aria-labelledby="accordionOne-accordion-head-hylejmym"
+                                    data-bs-parent="#accordionOne">
+                                    <div class="accordion-body">
+<pre class="text-black">
+    Different types of anemia have different causes. They include:
+    
+    Iron deficiency anemia. This most common type of anemia is caused by a shortage of iron in your body. Your bone marrow
+    needs iron to make hemoglobin. Without adequate iron, your body can't produce enough hemoglobin for red blood cells.
+    
+    Without iron supplementation, this type of anemia occurs in many pregnant women. It's also caused by blood loss, such as
+    from heavy menstrual bleeding; an ulcer in the stomach or small bowel; cancer of the large bowel; and regular use of
+    some pain relievers that are available without a prescription, especially aspirin, which can cause inflammation of the
+    stomach lining resulting in blood loss. It's important to determine the source of iron deficiency to prevent recurrence
+    of the anemia.
+    
+    Vitamin deficiency anemia. Besides iron, your body needs folate and vitamin B-12 to produce enough healthy red blood
+    cells. A diet lacking in these and other key nutrients can cause decreased red blood cell production. Some people who
+    consume enough B-12 aren't able to absorb the vitamin. This can lead to vitamin deficiency anemia, also known as
+    pernicious anemia.
+
+    Anemia of inflammation. Certain diseases — such as cancer, HIV/AIDS, rheumatoid arthritis, kidney disease, Crohn's
+    disease and other acute or chronic inflammatory diseases — can interfere with the production of red blood cells.
+
+    Aplastic anemia. This rare, life-threatening anemia occurs when your body doesn't produce enough red blood cells. Causes
+    of aplastic anemia include infections, certain medicines, autoimmune diseases and exposure to toxic chemicals.
+    Anemias associated with bone marrow disease. A variety of diseases, such as leukemia and myelofibrosis, can cause anemia
+    by affecting blood production in your bone marrow. The effects of these types of cancer and cancer-like disorders vary
+    from mild to life-threatening.
+
+    Hemolytic anemias. This group of anemias develops when red blood cells are destroyed faster than bone marrow can replace
+    them. Certain blood diseases increase red blood cell destruction. You can inherit a hemolytic anemia, or you can develop
+    it later in life.
+
+    Sickle cell anemia. This inherited and sometimes serious condition is a hemolytic anemia. It's caused by a defective
+    form of hemoglobin that forces red blood cells to assume an abnormal crescent (sickle) shape. These irregular blood
+    cells die prematurely, resulting in a chronic shortage of red blood cells.
+</pre>
+                                    </div>
+                                </div>
+                            </article>
+                            <!--Bootstrap accordion-->
+                            <article class="accordion-item accordion-custom accordion-light">
+                                <div class="accordion-header" id="accordionOne-accordion-head-jhiuxrss">
+                                    <div class="accordion-title">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#accordionOne-accordion-body-vjpufuqa"
+                                            aria-controls="accordionOne-accordion-body-vjpufuqa"
+                                            aria-expanded="false">How is anemia diagnosed?<span
+                                                class="accordion-arrow"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="accordion-collapse collapse" id="accordionOne-accordion-body-vjpufuqa"
+                                    aria-labelledby="accordionOne-accordion-head-jhiuxrss"
+                                    data-bs-parent="#accordionOne">
+                                    <div class="accordion-body">
+<pre class="text-black">
+A diagnosis of anemia begins with both your health history and your family health history, along with a physical exam.
+
+WHO's Hemoglobin thresholds used to define anemia[61] (1 g/dL = 0.6206 mmol/L)
+
+    Age or gender group             Hb threshold (g/dL)     Hb threshold (mmol/L)
+    Children (0.5–5.0 yrs)              11.0                        6.8
+    Children (5–12 yrs)                 11.5                        7.1
+    Teens (12–15 yrs)                   12.0                        7.4
+    Women, non-pregnant (>15yrs)        12.0                        7.4
+    Women, pregnant                     11.0                        6.8
+    Men (>15yrs)                        13.0                        8.1
+
+A family history of certain types of anemia such as sickle cell disease can be helpful. A history of exposure to toxic
+agents in the home or workplace might point to an environmental cause.
+
+Laboratory tests are most often used to diagnose anemia. Some examples of tests that your doctor may order include:
+
+Complete blood count (CBC). The CBC blood test measures your hemoglobin levels and can show the number and size of red
+blood cells. It can also indicate if levels of other blood cells like white blood cells and platelets are normal.
+
+Reticulocyte count. A reticulocyte count is a blood test that measures levels of immature red blood cells called
+reticulocytes. It can help your doctor determine if your bone marrow is producing enough new red blood cells.
+
+Serum iron levels. A serum iron test is a blood test that measures the total amount of iron in your blood. It can show
+if iron deficiency is the cause of anemia.
+
+Ferritin test. A ferritin test is a blood test that analyzes iron stores in your body.
+Vitamin B12 test. The vitamin B12 test is a blood test that measures your vitamin B12 levels and helps your doctor
+determine if these levels are too low.
+
+Folic acid test. A folic acid test is a blood test that measures your folate levels and can indicate if this level is
+too low.
+Coombs test. The Coombs test is a blood test that looks for the presence of autoantibodies that are targeting and
+destroying your own red blood cells.
+
+Fecal occult blood test. This test applies a chemical to a stool specimen to see if blood is present. If the test is
+positive, it means that blood is being lost somewhere in the gastrointestinal tract. Health conditions like stomach
+ulcers, ulcerative colitis, and colon cancer can cause blood in stool.
+
+Bone marrow tests. Testing of a bone marrow aspirate or biopsy can help your doctor see if your bone marrow is
+functioning normally. These types of tests can be very helpful if conditions like leukemia, multiple myeloma, or
+aplastic anemia are suspected.
+</pre>
+                                    </div>
+                                </div>
+                            </article>
+                            <!--Bootstrap accordion-->
+                            <article class="accordion-item accordion-custom accordion-light">
+                                <div class="accordion-header" id="accordionOne-accordion-head-jeulerby">
+                                    <div class="accordion-title">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#accordionOne-accordion-body-ffanwvle"
+                                            aria-controls="accordionOne-accordion-body-ffanwvle"
+                                            aria-expanded="false">Complications caused by anemia<span
+                                                class="accordion-arrow"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="accordion-collapse collapse" id="accordionOne-accordion-body-ffanwvle"
+                                    aria-labelledby="accordionOne-accordion-head-jeulerby"
+                                    data-bs-parent="#accordionOne">
+                                    <div class="accordion-body">
+<pre class="text-bg-gray-light">
+If left untreated, anemia can go on to cause potentially serious complications. These can include:
+
+    heart problems, such as:
+        angina
+        arrhythmias
+        enlarged heart
+        heart failure
+        heart attack
+
+    peripheral nerve damage
+
+    restless leg syndrome
+
+    depression
+
+    problems with memory
+
+    confusion
+
+    a weakened immune system, which can lead to more frequent infections
+
+    pregnancy complications like premature birth or low birth weight
+    developmental delays in children
+
+    multi-organ failure, which can result in death
+
+    To avoid potential complications, it’s important to see your doctor if you develop signs or symptoms of anemia. In many
+    situations, anemia can be easily treated.
+</pre>                                        
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section-bottom-30 section-top-60 section-md-bottom-40 section-md-top-90">
+            <div class="container-fluid">
+                <h3 class="text-center">Anemia Diet Plan</h3>
+                <div class="row justify-content-md-center">
+                    <div class="col-xl-10">
+                        <div class="tabs-custom tabs-horizontal tabs-corporate" id="tabs-1">
+                            <ul class="nav nav-tabs">
+                                <li><a class="nav-link active" href="#tabs-1-1" data-bs-toggle="tab">1. Leafy greens</a></li>
+                                <li><a class="nav-link" href="#tabs-1-2" data-bs-toggle="tab">2. Meat and poultry</a></li>
+                                <li><a class="nav-link" href="#tabs-1-3" data-bs-toggle="tab">3. Liver</a></li>
+                                <li><a class="nav-link" href="#tabs-1-4" data-bs-toggle="tab">4. Seafood</a></li>
+                                <li><a class="nav-link" href="#tabs-1-5" data-bs-toggle="tab">5. Fortified foods</a></li>
+                                <li><a class="nav-link" href="#tabs-1-6" data-bs-toggle="tab">6. Beans</a></li>
+                                <li><a class="nav-link" href="#tabs-1-7" data-bs-toggle="tab">7. Nuts and seeds</a></li>
+                            </ul>
+                            <div class="tab-content text-secondary">
+                                <div class="tab-pane fade show active" id="tabs-1-1">
+<pre class="">
+    Leafy greens, especially dark ones, are among the best sources of nonheme iron. 
+    They include:
+        spinach
+        kale
+        collard greens
+        dandelion greens
+        Swiss chard
+
+    Some leafy greens such as Swiss chard and collard greens also contain folate. A diet low in folate may cause folate
+    deficiency anemia. Citrus fruits, beans, and whole grains are good sources of folate.
+    
+    When eating dark, leafy greens for iron, there’s a catch. Some greens high in iron, such as spinach and kale, are also
+    high in oxalates. Oxalates can bind with iron, preventing the absorption of nonheme iron.
+    
+    So while it’s beneficial to eat your greens as part of an overall anemia diet, don’t depend on them solely to treat the
+    condition.
+    
+    Vitamin C helps your stomach absorb iron. Eating leafy greens with foods that contain vitamin C such as oranges, red
+    peppers, and strawberries may increase iron absorption. Some greens are good sources of both iron and vitamin C, such as
+    collard greens and Swiss chard.
+</pre>
+                                </div>
+                                <div class="tab-pane fade" id="tabs-1-2">
+<pre>
+All meat and poultry contain heme iron. Red meat, lamb, and venison are the best sources. Poultry and chicken have lower
+amounts.
+
+Eating meat or poultry with nonheme iron foods, such as leafy greens, along with a vitamin C-rich fruit can increase
+iron absorption.
+</pre>
+                                </div>
+                                <div class="tab-pane fade" id="tabs-1-3">
+<pre>
+Many people shy away from organ meats, but they’re a great source of iron.
+
+Liver is arguably the most popular organ meat. It’s rich in iron and folate. Some other iron-rich organ meats are heart,
+kidney, and beef tongue.
+</pre>
+                                </div>
+                                <div class="tab-pane fade" id="tabs-1-4">
+<pre>
+Some seafood provides heme iron. Shellfish such as oysters, clams, scallops, crabs, and shrimp are good sources. Most
+fish contain iron.
+
+Fish with the best levels of iron include:
+
+    canned or fresh tuna
+    mackerel
+    mahi mahi
+    pompano
+    fresh perch
+    fresh or canned salmon
+
+Although canned sardines are good sources of iron, they’re also high in calcium.
+
+Calcium may bind with iron and reduces its absorption. Foods high in calcium shouldn’t be eaten at the same time as
+iron-rich foods.
+
+Other examples of calcium-rich foods include:
+
+    dairy milk
+    fortified plant milks
+    yogurt
+    kefir
+    cheese
+    tofu
+</pre>
+                                </div>
+                                <div class="tab-pane fade" id="tabs-1-5">
+<pre>
+Many foods are fortified with iron. Add these foods to your diet if you’re a vegetarian or struggle to eat other sources
+of iron:
+
+    fortified orange juice
+    fortified ready-to-eat cereals
+    foods made from fortified refined flour such as white bread
+    fortified pasta
+    foods made from fortified cornmeal
+    fortified white rice
+</pre>
+                                </div>
+                               <div class="tab-pane fade" id="tabs-1-7">
+<pre>
+Many types of nuts and seeds are good sources of iron. They taste great on their own or sprinkled on salads or yogurt.
+
+Some nuts and seeds that contain iron are:
+
+    pumpkin seeds
+    cashews
+    pistachios
+    hemp seeds
+    pine nuts
+    sunflower seeds
+    Find raw pumpkin seeds, raw cashews, and raw pine nuts online.
+
+    Both raw and roasted nuts have similar amounts of iron.
+
+    Almonds are also a good source of iron. They’re great as part of a healthy eating plan, but since they’re also high in
+    calcium, they may not increase your iron levels that much.
+</pre>
+                                                                </div>
+                                <div class="tab-pane fade" id="tabs-1-6">
+<pre>
+Beans are good sources of iron for vegetarians and meat eaters alike. They’re also inexpensive and versatile.
+
+Some iron-rich options are:
+
+    kidney beans
+    chickpeas
+    soybeans
+    black-eyed peas
+    pinto beans
+    black beans
+    peas
+    lima beans
+</pre>
+                                                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section section-40 section-md-top-75 section-md-bottom-60 bg-cod-gray novi-background">
+            <div class="container text-center text-md-start">
+                <div class="row row-30 align-items-md-center justify-content-lg-center justify-content-xl-start">
+                    <div class="col-lg-11 col-xl-3"><a class="brand" href="templates/index.html"><img
+                                src="static/images/logo-inverse-139x22.svg" alt="" width="139" height="22" /></a></div>
+                    <div class="col-md-7 col-lg-6 col-xl-5">
+                        <div class="wrap-justify">
+                            <address class="contact-info text-start">
+                                <div
+                                    class="unit unit-horizontal unit-spacing-xs align-items-center justify-content-center unit-sm-left">
+                                    <div class="unit-left"><span
+                                            class="novi-icon icon icon-md-custom icon-gunsmoke material-icons-place"></span>
+                                    </div>
+                                    <div class="unit-body fw-light"><a class="link-light-03 d-inline" href="#">9784 Bear
+                                            Hill Drive<br>Brooklyn, NY 11228</a></div>
+                                </div>
+                            </address>
+                            <address class="contact-info text-start">
+                                <div
+                                    class="unit unit-horizontal unit-spacing-xs align-items-center justify-content-center unit-sm-left">
+                                    <div class="unit-left"><span
+                                            class="novi-icon icon icon-md-custom icon-gunsmoke material-icons-phone"></span>
+                                    </div>
+                                    <div class="unit-body fw-light">
+                                        <div class="link-wrap"><a class="link-light-03" href="tel:#">+1 800 123 45
+                                                67</a></div>
+                                        <div class="link-wrap"><a class="link-light-03"
+                                                href="mailto:#">info@demolink.org</a></div>
+                                    </div>
+                                </div>
+                            </address>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-xl-4 text-lg-center">
+                        <ul class="list-inline list-inline-xs">
+                            <li><a class="novi-icon icon icon-sm-custom link-tundora fa-facebook" href="#"></a></li>
+                            <li><a class="novi-icon icon icon-sm-custom link-tundora fa-twitter" href="#"></a></li>
+                            <li><a class="novi-icon icon icon-sm-custom link-tundora fa-google-plus" href="#"></a></li>
+                            <li><a class="novi-icon icon icon-sm-custom link-tundora fa-linkedin" href="#"></a></li>
+                            <li><a class="novi-icon icon icon-sm-custom link-tundora fa-skype" href="#"></a></li>
+                            <li><a class="novi-icon icon icon-sm-custom link-tundora fa-vine" href="#"></a></li>
+                            <li><a class="novi-icon icon icon-sm-custom link-tundora fa-youtube" href="#"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="page-foot page-foot-default section-35 bg-black novi-background text-center">
+            <div class="container">
+                <p class="rights small"><span>Starbis</span><span>&nbsp;&#169;&nbsp;</span><span
+                        class="copyright-year"></span><span>All Rights Reserved</span><br class="d-md-none"><a
+                        class="link-primary" href="templates/privacy-policy.html">Privacy Policy</a></p>
+            </div>
+        </footer>
+    </div>
+    <div class="snackbars" id="form-output-global"></div>
+    <script src="static/js/core.min.js"></script>
+    <script src="static/js/script.js"></script>
+</body>
+
+</html>
